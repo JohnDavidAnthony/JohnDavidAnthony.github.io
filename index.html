@@ -2,28 +2,25 @@
 
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Quicksand|Work+Sans:100" rel="stylesheet">
   	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
   	<title>John David Anthony</title>
   	<meta name="author" content="John David Anthony">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
   	<link rel="stylesheet" href="index.css">
-	<!--Loads scroll magic to make website look better-->
-
+    <link rel="stylesheet" href="css/navBar.css">
 
 </head>
 
-<body>
+<body onscroll="stickyFunction()">
 <!-- Landing Image-->
 	<div id="landingImage">
         <img id="cloud1" src="assets/cloud1.png">
         <img id="cloud2" src="assets/cloud2.png">
         <img id="cloud3" src="assets/cloud3.png">
         <div id="welcome">
-            <div id="welcomeMessage">
-
-            </div>
-
+            <div id="welcomeMessage"></div>
         </div>
         <div id="halfway">
             <div id="landingDescription">
@@ -36,33 +33,38 @@
 
 <!-- Navigation Bar for the pages -->
 	<header>
+        <div id="chevronContainer"><span id="scrollDown">V</span></div>
 		<nav id="navBar">
-			<ul>
-				<li><a class="navItem" href="index.html">Home</a></li>
-				<li><a class="navItem" href="pages/photography.html">Photography</a></li>
+			<ul class="navItem">
+				<a href="#aboutMe" onclick="zenscroll.to(document.getElementById('aboutMe'))">Profile<li></li></a>
+                <a href="#aboutMe">Projects<li></li></a>
+                <a href="#aboutMe">Photography<li></li></a>
+                <a href="#aboutMe">Profile<li></li></a>
+                <a href="#aboutMe">Contact<li></li></a>
 			</ul>
 		</nav>
 	</header>
 <!-- Introduction -->
+    <div id="marginFix" style="margin-top: -80px"></div>
 	<section id="autobio">
 		<!-- Description -->
+		<div class="row">
+			<!--Two column layout-->
+			<article id="aboutMe" data-aos="fade-up">
+                <h1 class="titles">Profile</h1>
+                <hr class="breakLine">
+				<div class="column">
+					<img id="happyCIBC" src="assets/happyCIBC.png">
+				</div>
 
-		<article id="aboutMe" data-aos="fade-up">
-			<div class="centerDiv">
+				<div class="column" id="secondColumn">
+					<h2 id="descriptionTitle">About Me</h2>
+					<p id="bio">I have a passion for creating things; from computer programs to capturing the moment in photographs, I love the feeling of creating something myself or solving a challenging problem. I am currently a computer science student attending Queen's University, completing a specialization in software design.</p>
+				</div>
+				<br>
+			</article>
+		</div>
 
-			<div class="aboutMeInline" id="photoColumn">
-				<img id="happyCIBC" src="assets/happyCIBC.png">
-			</div>
-
-			<div class="aboutMeInline" id="aboutMeColumn">
-				<h2 id="descriptionTitle">About Me</h2>
-				<p id="bio">I have a passion for creating things; from computer programs to capturing the moment in photographs, I love the feeling of creating something myself or solving a challenging problem. I am currently a computer science student attending Queen's University, completing a specialization in software design.</p>
-			</div>
-
-			<div style="clear: both;"></div>
-			</div>
-			<br>
-		</article>
 
 		<div id="everythingElse">
 			<!-- Education -->
@@ -74,19 +76,29 @@
 				</p>
 			</article>
 
-			<!-- Tools -->
-			<article id="tools">
-				<h2 id="toolsTitle">Programming Languages and Applications</h2>
-				<p>Python, Java, HTML 5, CSS3, Javascript, Github, Mac OS, Windows OS, XCode, Photoshop CS5</p>
-			</article>
 		</div>
 	</section>
+
+
+    <!--Projects-->
+    <div class="projects" id="test">
+        <h1 class="titles">Projects</h1>
+        <hr class="breakLine">
+    </div>
+
+
+
+
+
+
+
 
 
 	<!-- Contact Information -->
 	<footer>
 		<div id="contact">
-			<h2 id="contactTitle">Contact</h2>
+            <h1 class="titles">Contact</h1>
+            <hr class="breakLine">
 			<h3>Email: johndavid.anthony1@gmail.com</h3>
 			<!-- Social Media Links -->
 			<div id="socialMedia">

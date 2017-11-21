@@ -1,16 +1,20 @@
 /*Remove debugging backfround colours*/
 
-
 body,html{
-	/*Adds in Beautiful Roboto Font from google with fall back*/
+    min-width: 300px;
+	/*Adds in  Roboto Font from google with fall back*/
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
-	background-color: blue;
+	background-color: #36b2f8;
 	text-align: center;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 /*Smooth scrolling for Zen scroll*/
 body, .smooth-container {
@@ -20,12 +24,12 @@ canvas {
 	width: 100%; height: 100%
 }
 section{
-	margin: 3vw; 
-	margin-top: 70px;
-	margin-bottom: 20px;
+    margin: 70px 3vw 20px;
 }
 /*Welcome Message*/
 #welcomeMessage{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 100;
 	margin: auto;
 	padding-top: 10%;
 	font-size: 12em;
@@ -34,7 +38,7 @@ section{
 #welcomeMessage div{
     display:inline-block;
 	opacity:0;
-	transform:scale(0.9);
+	transform:scale(0.7);
 }
 #landingImage img{
 	position: absolute;
@@ -103,198 +107,131 @@ section{
 }
 
 
-
-/*Nav bar*/
-.navItem{
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 2.5em;
+/*------------- Content ----------------*/
+.titles{
+    font-size: 5em;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
-nav ul {
-	text-align: center;
-	list-style: none;
-	background-color: #444;
-	padding: 0;
-	margin: 0;
-}
-nav li {
-	font-size: 1.2em;
-	line-height: 80px;-
-	height: 80px;
-	display: inline-block;
-	margin-right: -4px;
-}
-nav li a {
-	text-decoration: none;
-	color: #fff;
-	display: block;
-	transition: .3s background-color;
-}
-nav li a:hover {
-	background-color: #111;
-}
-/*Biography and body shot*/
-#autobio{
-	margin: 0;
-}
-.centerDiv{
-	width: 620px;
-	margin:0 auto;
+.breakLine{
+    width: 810px;
+    z-index: -10;
+    margin-bottom: 10px;
+    border-color: #111111;
 }
 
-/*About Me*/
-#aboutMe{
-	background-color: white;
+
+
+.column h2{
+	padding-top: 50px;
 }
-.aboutMeInline{
-	width: 300px;
-	min-width: 300px;
+.row{
+	width: 810px;
+	margin: auto;
+}
+.column {
 	float: left;
-	margin:auto
+	width: 400px;
 }
-#aboutMeColumn{
-	text-align: right;
-	padding-right: 20px;
-	padding-top: 20px;
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 #happyCIBC{
-	padding-top: 20px;
-	width:100%;
-	display: block;
+	width: 350px;
 }
-/*Education*/
-#everythingElse{
-	background-color: grey;
-}
-#education{
-	padding-top: 10px;
-}
-#tools{
-	padding-bottom: 10px;
-}
-/*Contact*/
 #contact{
-	margin-top: -30px;
-	background-color: white;
+    margin: 0;
+    background-color: #111a34;
+}
+.projects{
+    margin: 0;
+    background-color: #1e2234;
+    margin-bottom: -60px;
+}
+footer{
+    background-color: #111a34;
+}
+#test h1, .projects br{
+    margin:0;
 }
 
 .icons{
-	width: 64px;
-	margin: 0vw;
+    width: 100px;
 }
-
 /*Tablet Screen*/
 @media screen and (max-width: 1025px) {
-    body,html{
-        background-color: yellow;
-        font-size: 14px;
+    section{
+        margin: 150px 3vw 20px;
     }
-	.navItem{
-		padding-left: 20px;
-		padding-right: 20px;
+    #welcomeMessage{
+        padding-top: 15%;
+        font-size: 8em;
+    }
+    #jdName{
+        font-size: 2em;
+    }
+    #jdDescription{
+        font-size: 1.3em;
+    }
+
+	.column h2{
+		padding-top: 0;
+	}
+	.row{
+		width: 610px;
+		margin: auto;
+	}
+	.column {
+		float: left;
+		width: 300px;
 	}
 
-	#landingDescription{
-		font-size: 1.1em;
-		width: 500px;
+	#happyCIBC{
+		padding-top: 25px;
+		width: 250px;
 	}
-	#cloud1{
-		width: 500px;
-		left: -5%;
-		top: 20%;
-	}
-	#cloud2{
-		width: 550px;
-		right: -5%;
-		top: -10%;
-	}
-	#cloud3{
-		width: 650px;
-		right: -5%;
-		bottom: 30%;
-	}
-	#welcomeMessage{
-		padding-top: 30%;
-		font-size: 10em;
-	}
-	#jdName{
-
-	}
-
-
+    .icons{
+        width: 10%;
+    }
 }
 /*phone Screen*/
 @media screen and (max-width: 750px){
-	body,html {
-		background-color: red;
-		font-size: 12px;
-		text-align: center;
-		clear: both;
+    #landingDescription{
+        left: 0;
+    }
+    #jdName{
+        font-size: 1.3em;
+    }
+    #jdDescription{
+        font-size: 1em;
+    }
+    #welcomeMessage{
+        padding-top: 15%;
+        font-size: 4em;
+    }
+	.column {
+		width: 100%;
+	}
+	.column h2{
+		padding-top: 0;
+	}
+	.row {
+		width: 100%;
 		margin: auto;
 	}
-	#welcomeMessage{
-		padding-top: 40%;
-		font-size: 6em;
+
+	#happyCIBC{
+		padding-top: 0;
+		width: 60%;
 	}
-	#cloud1{
-		width: 50%;
-		left: -5%;
-		top: 10%;
-	}
-	#cloud2{
-		width: 350px;
-		right: -5%;
-		top: -10%;
-	}
-	#cloud3{
-		width: 350px;
-		right: -5%;
-		bottom: 10%;
-	}
-	p{
-		font-size: 1.2em;
-	}
-	.aboutMeInline{
-		width: 300px;
-		min-width: 300px;
-		float: none;
-		min-width: 0;
-		clear: both;
-		margin:auto
-	}
-	.navItem{
-		padding-left: 5px;
-		padding-right: 5px;
-		font-size: 1em;
-	}
-	.centerDiv{
-		width:auto;
-		min-width: 330px;
-	}
-	nav li {
-		line-height: 40px;
-		height: 40px;
-	}
-	#tools{
-		width: 330px;
-		text-align: center;
-		margin: auto;
+	.icons{
+		width: 10%;
 	}
 	#landingDescription{
 		width: 100%;
-		color: white;
-		text-align: center;
-		top: 30%;
-		padding: 0px;
-	}
-	#aboutMeColumn{
-		text-align: left;
-		padding-right: 20px;
-		padding-top: 20px;
-		margin:auto;
-	}
-	.icons{
-		width: 15vw;
-		margin: 5vw;
 	}
 }

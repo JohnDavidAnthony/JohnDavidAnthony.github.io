@@ -13,7 +13,7 @@ function startAnimation() {
         targets: '#welcomeMessage div',
         opacity:1,
         scale:1,
-        easing:'easeInBack',
+        easing:'easeInOutCubic',
         delay: function(el, index) {
             return index * 80;
         },

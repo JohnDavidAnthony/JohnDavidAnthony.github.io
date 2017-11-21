@@ -1,0 +1,135 @@
+/*Nav bar*/
+footer{
+    height: 100%;
+}
+#navBar {
+    font-size: 1.4em;
+    width: 150px;
+    background-color: #164663;
+    /*height of the nav bar here*/
+    margin-bottom: -455px;
+    z-index: 10;
+
+}
+.navItem{
+    padding: 0;
+    margin: 0;
+}
+/* Navbar links */
+#navBar li,#navBar a, #chevronContainer{
+    width: 150px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+#navBar a{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#navBar .navItem :hover{
+    background-color: #4978f8;
+}
+
+.sticky {
+    top: 100px;
+    position: fixed;
+    left: -1px;
+}
+
+/*Arrow Down Animation*/
+@keyframes wiggle {
+    0% {
+        padding-top: 20px;
+    }
+
+    50% {
+        padding-top: 28px;
+    }
+
+    100% {
+        padding-top: 20px;
+    }
+}
+#scrollDown{
+    padding-top: 10px;
+
+    display: inline-block;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#chevronContainer{
+    margin: 0;
+    margin-top: -80px;
+    height: 80px;
+    display: block;
+    background-color: #164663;
+}
+
+
+/*Tablet Screen*/
+@media screen and (max-width: 1025px) {
+    /*Nav bar*/
+    #navBar {
+        font-size: .8em;
+        overflow: hidden;
+        display: initial;
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+    }
+    .navItem{
+        height: 80px;
+        background-color: #333;
+        padding: 0;
+        margin: 0;
+    }
+    /* Navbar links */
+    #navBar li,#navBar a,#scrollDown{
+        width: 150px;
+        margin: auto;
+        display:inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+    }
+    #navBar a, #scrollDown{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    #navBar .navItem :hover{
+        background-color: #4978f8;
+    }
+
+    #chevronContainer{
+        width: 100%;
+        background-color: rgba(51, 51, 51,.7);
+    }
+
+    .sticky {
+        top: 0;
+        position: fixed;
+    }
+
+
+}
+/*phone Screen*/
+@media screen and (max-width: 750px){
+    #navBar a{
+        padding-top: 30px;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-bottom: auto;
+        width: 10%;
+    }
+    #autobio{
+        margin-top: 10px;
+    }
+    .sticky {
+        top: 0;
+        position: fixed;
+    }
+}
