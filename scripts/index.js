@@ -21,7 +21,7 @@ function stickyFunction() {
             content.style.margin = "-60px auto auto   0px";
         } else {
             navbar.classList.remove("sticky");
-            content.style.margin = "-555px auto auto   0px";
+            content.style.margin = "-60px auto auto   0px";
         }
     }
     else if (width > 750){
@@ -47,7 +47,7 @@ function stickyFunction() {
 
 
 function onPageLoad() {
-    let descriptionList = ["I'm a developer", "I'm a photographer", "I get things done."];
+    let descriptionList = ["I'm a developer", "I work hard", "I get things done."];
     let fontList = ["Courier","Quicksand","Open Sans"];
     let element = document.getElementById("jdDescription");
     setTimeout(function () {

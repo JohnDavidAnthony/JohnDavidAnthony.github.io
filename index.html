@@ -37,10 +37,9 @@
 		<nav id="navBar">
 			<ul class="navItem">
 				<a href="#aboutMe" onclick="zenscroll.to(document.getElementById('aboutMe'))">Profile<li></li></a>
-                <a href="#aboutMe">Projects<li></li></a>
-                <a href="#aboutMe">Photography<li></li></a>
-                <a href="#aboutMe">Profile<li></li></a>
-                <a href="#aboutMe">Contact<li></li></a>
+                <a href="#projects" onclick="zenscroll.to(document.getElementById('projects'))">Projects<li></li></a>
+				<a href="#Blog">Blog<li></li></a>
+                <a href="#contact" onclick="zenscroll.to(document.getElementById('contact'))">Contact<li></li></a>
 			</ul>
 		</nav>
 	</header>
@@ -68,7 +67,7 @@
 
 		<div id="everythingElse">
 			<!-- Education -->
-			<article id="education">
+			<article id="education" data-aos="fade-up">
 				<h2 id="educationTitle">Education</h2>
 				<p>
 					Queen's University Computer Science 2020 <br>
@@ -81,17 +80,82 @@
 
 
     <!--Projects-->
-    <div class="projects" id="test">
+    <div id="projects" class="projects" id="test">
         <h1 class="titles">Projects</h1>
         <hr class="breakLine">
+		<!-- Currency Converter -->
+		<div class="row">
+			<!--Two column layout-->
+			<article id="currency" data-aos="fade-up">
+				<h2>iOS Currency Converter</h2>
+				<div class="column">
+					<img class="projectsPhoto" id="currencyConverterGif" src="assets/screens/currency%20converter.gif" width="300px">
+				</div>
+				<div class="secondColumn">
+					<h3>Simple, easy to use converter between 50+ currencies</h3>
+					<ul>
+						<li>Choose any base currency you want</li>
+						<li>Choose any currency to convert to</li>
+						<li>Auto refreshing and pull to refresh to ensure you have the most up to date information</li>
+						<li>Swipe to remove currencies you are no longer using</li>
+					</ul>
+					<a href="https://github.com/JohnDavidAnthony/CurrencyConverter">
+						<img src="assets/viewOnGithub.png" width="100px">
+					</a>
+				</div>
+			</article>
+		</div>
+
+		<hr class="breakLineLight">
+
+		<!-- Calculator -->
+		<div class="row">
+			<!--Two column layout-->
+			<article id="calculator" data-aos="fade-up">
+				<h2>iOS Currency Converter</h2>
+				<div class="column">
+					<img class="projectsPhoto" id="calculatorGif" src="assets/screens/calculator.gif" width="300px">
+				</div>
+				<div class="secondColumn">
+					<h3>Simple, no frills, ios calculator. With cutting-edge features</h3>
+					<ul>
+						<li>All new dynamic addition engine</li>
+						<li>seamlessly subtract numbers to create smaller numbers</li>
+						<li>First ios App, happy with the results and gave me a good foothold in the swift / XCode environment. I will use the tools I learned during this project to create cooler, more useful apps in the future.</li>
+					</ul>
+					<a href="https://github.com/JohnDavidAnthony/ios-calculator">
+						<img src="assets/viewOnGithub.png" width="100px">
+					</a>
+				</div>
+			</article>
+		</div>
+
+		<!-- Smart Mirror-->
+		<hr class="breakLineLight">
+
+		<div class="row">
+			<!--Two column layout-->
+			<article id="mirror" data-aos="fade-up">
+				<h2>Web Based Smart Mirror</h2>
+				<div class="column">
+					<img class="projectsPhoto" id="mirrorjpg" src="assets/screens/smartMirror.jpg" width="300px">
+				</div>
+				<div class="secondColumn">
+					<h3>Simple web based application built with HTML, CSS and JavaScript</h3>
+					<ul>
+						<li>Gets local weather forecast</li>
+						<li>Imports you calendar to show you what you have next</li>
+						<li>Allows you to select your choice of news provider</li>
+						<li>Displays the time</li>
+					</ul>
+					<a href="https://github.com/JohnDavidAnthony/Mirror-Mirror-on-the-wall">
+						<img src="assets/viewOnGithub.png" width="100px">
+					</a>
+				</div>
+			</article>
+		</div>
+
     </div>
-
-
-
-
-
-
-
 
 
 	<!-- Contact Information -->
@@ -115,7 +179,7 @@
     <script src="scripts/zenscroll-min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="scripts/welcomeMessage.js"></script>
-<script src="scripts/typewriter.js"></script>
+    <script src="scripts/typewriter.js"></script>
     <script src="scripts/index.js"></script>
 
 </body>

@@ -26,6 +26,9 @@ canvas {
 section{
     margin: 70px 3vw 20px;
 }
+a{
+	text-decoration: none;
+}
 /*Welcome Message*/
 #welcomeMessage{
     font-family: "Work Sans", sans-serif;
@@ -120,6 +123,12 @@ section{
     margin-bottom: 10px;
     border-color: #111111;
 }
+.breakLineLight{
+	width: 810px;
+	z-index: -10;
+	margin-bottom: 10px;
+	border-color: rgba(61, 62, 62, 0.59);
+}
 
 
 
@@ -145,15 +154,20 @@ section{
 }
 #contact{
     margin: 0;
-    background-color: #111a34;
+    background-color: #82dffa;
 }
 .projects{
     margin: 0;
-    background-color: #1e2234;
+    background-color: #8fc8fa;
     margin-bottom: -60px;
 }
+
+/* Adds space between list items*/
+li {
+	margin: 0 0 10px 0;
+}
 footer{
-    background-color: #111a34;
+    background-color: #82dffa;
 }
 #test h1, .projects br{
     margin:0;
@@ -188,6 +202,10 @@ footer{
 	.column {
 		float: left;
 		width: 300px;
+	}
+
+	.projectsPhoto{
+		width: 250px;
 	}
 
 	#happyCIBC{
